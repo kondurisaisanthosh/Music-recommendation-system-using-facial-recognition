@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 from tensorflow.keras.models import Sequential,load_model
-from keras.layers import Dense,Dropout,Activation,Flatten
+from tensorflow.keras.layers import Dense,Dropout,Activation,Flatten
 from keras.layers import Conv2D,MaxPooling2D,BatchNormalization
 from keras.losses import categorical_crossentropy
 from keras.optimizers import Adam
@@ -42,7 +42,7 @@ Y_test=np.array(Y_test,'float32')
 num_features=64
 num_labels=7
 batch_size=64
-epochs=15
+epochs=30
 width,height=48,48
 
 Y_train=np_utils.to_categorical(Y_train , num_classes=num_labels)

@@ -2,12 +2,8 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import cv2
 import numpy as np
-import tensorflow as tf
 from keras.models import model_from_json
 from keras.preprocessing import image
-
-# Source = lappy camera
-# cap0 = cv2.VideoCapture(0)
 
 #load model
 model = model_from_json(open("fer.json", "r").read())
@@ -15,8 +11,6 @@ model = model_from_json(open("fer.json", "r").read())
 model.load_weights('fer.h5')
 
 face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-# face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
 
 cap=cv2.VideoCapture(0)
 
