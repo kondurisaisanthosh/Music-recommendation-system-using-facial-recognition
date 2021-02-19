@@ -33,7 +33,7 @@ while True:
 
         predictions = model.predict(img_pixels)
 
-        #find max indexed array
+        #find max indexed array3
         max_index = np.argmax(predictions[0])
 
         emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')

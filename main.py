@@ -42,7 +42,7 @@ Y_test=np.array(Y_test,'float32')
 num_features=64
 num_labels=7
 batch_size=64
-epochs=30
+epochs=100
 width,height=48,48
 
 Y_train=np_utils.to_categorical(Y_train , num_classes=num_labels)

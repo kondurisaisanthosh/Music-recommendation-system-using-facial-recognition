@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405c1a75-235e-47b2-91e8-fe88829dce25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videoTester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Music-recommendation-system-using-facial-recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Music-recommendation-system-using-facial-recognition.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/videoTester.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
