@@ -1,4 +1,5 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import numpy as np
 import pandas as pd
 from tensorflow.keras.models import Sequential,load_model
@@ -41,7 +42,7 @@ Y_test=np.array(Y_test,'float32')
 
 num_features=64
 num_labels=7
-batch_size=64
+batch_size=256
 epochs=100
 width,height=48,48
 
@@ -50,41 +51,36 @@ Y_test=np_utils.to_categorical(Y_test, num_classes=num_labels)
 
 # Normalizing
 
-X_train-=np.mean(X_train,axis=0)
-X_train/=np.std(X_train,axis=0)
-
-X_test-=np.mean(X_test,axis=0)
-X_test/=np.std(X_test,axis=0)
+X_train/=255
+X_test/=255
 
 
 
 X_train=X_train.reshape(X_train.shape[0],width,height,1)
+X_train=X_train.astype('float32')
 X_test=X_test.reshape(X_test.shape[0],width,height,1)
+X_test=X_test.astype('float32')
 
 # design in CNN
 
 model=Sequential()
 
 #1st convolution layer
-model = Sequential()
-model.add(Conv2D(64, kernel_size=(3, 3), activation='relu', input_shape=(X_train.shape[1:])))
-model.add(Conv2D(64,kernel_size= (3, 3), activation='relu'))
+model.add(Conv2D(64, kernel_size=(5, 5), activation='relu', input_shape=(48,48,1)))
 # model.add(BatchNormalization())
-model.add(MaxPooling2D(pool_size=(2,2), strides=(2, 2)))
-model.add(Dropout(0.5))
+model.add(MaxPooling2D(pool_size=(5,5), strides=(2, 2)))
 
 #2nd convolution layer
 model.add(Conv2D(64, (3, 3), activation='relu'))
 model.add(Conv2D(64, (3, 3), activation='relu'))
 # model.add(BatchNormalization())
-model.add(MaxPooling2D(pool_size=(2,2), strides=(2, 2)))
-model.add(Dropout(0.5))
+model.add(MaxPooling2D(pool_size=(3,3), strides=(2, 2)))
 
 #3rd convolution layer
 model.add(Conv2D(128, (3, 3), activation='relu'))
 model.add(Conv2D(128, (3, 3), activation='relu'))
 # model.add(BatchNormalization())
-model.add(MaxPooling2D(pool_size=(2,2), strides=(2, 2)))
+model.add(MaxPooling2D(pool_size=(3,3), strides=(2, 2)))
 
 model.add(Flatten())
 
