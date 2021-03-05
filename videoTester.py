@@ -51,3 +51,8 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows
+
+# roc
+# pr curve
+# model learning rate curve
+# plot
