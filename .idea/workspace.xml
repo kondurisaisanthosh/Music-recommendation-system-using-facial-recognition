@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405c1a75-235e-47b2-91e8-fe88829dce25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fer.h5" beforeDir="false" afterPath="$PROJECT_DIR$/fer.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fer.json" beforeDir="false" afterPath="$PROJECT_DIR$/fer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/videoTester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.videoTester">
+  <component name="RunManager" selected="Python.home">
     <configuration name="home" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Music-recommendation-system-using-facial-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,14 +120,14 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.videoTester" />
-      <item itemvalue="Python.temp" />
       <item itemvalue="Python.home" />
+      <item itemvalue="Python.temp" />
+      <item itemvalue="Python.videoTester" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.videoTester" />
         <item itemvalue="Python.home" />
+        <item itemvalue="Python.videoTester" />
         <item itemvalue="Python.temp" />
       </list>
     </recent_temporary>
