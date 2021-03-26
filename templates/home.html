@@ -1,10 +1,43 @@
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8  offset-lg-2">
-            <h3 class="mt-5">Live Streaming</h3>
-            <img src="{{ url_for('video_feed') }}" width="100%">
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/home.css') }}">
+    <div class="container ">
+        <h3 class="  mt-5">Live Streaming</h3>
+        <div id="camera">sai</div>
+        <br>
+        <div class="row justify-content-md-center " style="text-align:center;">
+            <button class="col col col-lg-2" onclick="take_snapshot()" >Capture</button>
+            <button class="col col col-lg-2" onclick="retake()" >Retake</button>
+        </div>
+        <br>
+        <h3 class="row justify-content-md-center" class="mt-5">Mood: Person is Happy</h3>
+        <br>
+        <div class="row justify-content-md-center">
+            <audio controls><source src = "/html/Kalimba.mp3" type = "audio/mpeg"></audio>
         </div>
     </div>
-</div>
-</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script>
+        Webcam.set({
+            width:1000,
+            height:565,
+            image_format:'jpeg',
+            jpeg_quality:90
+        })
+        Webcam.attach("#camera");
+        function take_snapshot(){
+            Webcam.snap(function(data_uri){
+                document.getElementById('camera').innerHTML = '<img src="'+data_uri+'"/>';
+            });
+        }
+        function retake(){
+            document.getElementById('camera').innerHTML = '';
+        }
+    </script>
+{% endblock content %}
+
+
+

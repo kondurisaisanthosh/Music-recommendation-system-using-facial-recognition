@@ -5,3 +5,4 @@ keras== 2.4.0
 opencv-python
 camera
 imutils
+matplotlib
