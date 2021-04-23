@@ -19,7 +19,6 @@ while True:
     if not ret:
         continue
     gray_img= cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
-
     faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)
 
 
@@ -48,9 +47,9 @@ while True:
 
     if cv2.waitKey(10) == ord('q'):#wait until 'q' key is pressed
         break
-
-cap.release()
-cv2.destroyAllWindows
+#
+# cap.release()
+# cv2.destroyAllWindows
 
 # roc
 # pr curve
