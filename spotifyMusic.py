@@ -11,7 +11,7 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 playlists = sp.user_playlists('rmnvd22tpuikmwf5yzzsgnu2t') #My User ID/Name
 
-# print(playlists)
+print(playlists)
 
 def show_tracks(tracks):
     for i, item in enumerate(tracks['items']):

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405c1a75-235e-47b2-91e8-fe88829dce25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/color_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/color_img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spotifyMusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotifyMusic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.home">
+  <component name="RunManager" selected="Python.spotifyMusic">
     <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Music-recommendation-system-using-facial-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,9 +184,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spotifyMusic" />
         <item itemvalue="Python.home" />
         <item itemvalue="Python.cam" />
-        <item itemvalue="Python.spotifyMusic" />
         <item itemvalue="Python.cameraTester" />
         <item itemvalue="Python.videoTester" />
       </list>
