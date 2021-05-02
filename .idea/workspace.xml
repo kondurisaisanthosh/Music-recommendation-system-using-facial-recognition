@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405c1a75-235e-47b2-91e8-fe88829dce25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cameraTester.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facial_expression_model_weights.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spotifyMusic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/javascript/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascript/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoTester.py" beforeDir="false" afterPath="$PROJECT_DIR$/videoTester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/color_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/color_img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotifyMusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotifyMusic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +53,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.home">
+    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Music-recommendation-system-using-facial-recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cameraTester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Music-recommendation-system-using-facial-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="photo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="spotifyMusic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Music-recommendation-system-using-facial-recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,28 +149,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/photo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Music-recommendation-system-using-facial-recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spotifyMusic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,17 +183,17 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.cameraTester" />
       <item itemvalue="Python.home" />
-      <item itemvalue="Python.photo" />
-      <item itemvalue="Python.train" />
       <item itemvalue="Python.videoTester" />
+      <item itemvalue="Python.spotifyMusic" />
+      <item itemvalue="Python.cam" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.home" />
+        <item itemvalue="Python.cam" />
+        <item itemvalue="Python.spotifyMusic" />
         <item itemvalue="Python.cameraTester" />
         <item itemvalue="Python.videoTester" />
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.photo" />
       </list>
     </recent_temporary>
   </component>
