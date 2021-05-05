@@ -8,11 +8,12 @@ app = Flask(__name__)
 def index():
     return render_template('home.html')
 
-@app.route('/imagecapture/<data>')
+@app.route('/imagecapture/<data>', methods=['GET'])
 def capture(data):
     finalValue=data.replace("SLASH","/")
     preditemotion = capturePredict(finalValue)
-    return "received "+preditemotion
+    print("My emo ", preditemotion)
+    return preditemotion
 
 
 if __name__ == "__main__" :

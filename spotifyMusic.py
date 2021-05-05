@@ -16,12 +16,14 @@ print(playlists)
 def show_tracks(tracks):
     for i, item in enumerate(tracks['items']):
         track = item['track']
-        print("   %d %32.32s %s" % (i, track['artists'][0]['name'], track['name']))
+
+        print("   %d %32.32s %s  %s" % (i, track['artists'][0]['name'], track['name'],track['preview_url']))
 
 for playlist in playlists['items']:
-        if playlist['owner']['id'] == 'rmnvd22tpuikmwf5yzzsgnu2t' and playlist['name']=='disgust':
+        if playlist['owner']['id'] == 'rmnvd22tpuikmwf5yzzsgnu2t' and playlist['name']=='surprise':
             print(playlist['name'])
             print(playlist['external_urls']['spotify'])
+
             # webbrowser.open(playlist['external_urls']['spotify'])
             print('  total tracks', playlist['tracks']['total'])
 

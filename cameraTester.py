@@ -10,7 +10,7 @@ model.load_weights('fer.h5')
 face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 while True:
-    img = cv2.imread("1.jpeg")
+    img = cv2.imread("color_img.jpg")
     print(img.shape)
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces_detected = face_haar_cascade.detectMultiScale(gray_img, 1.32, 5)

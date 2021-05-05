@@ -1,29 +1,31 @@
 {% extends "base.html" %}
 {% block title %}Home Page{% endblock %}
 {% block content %}
-
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/home.css') }}">
 
-    <div class="container ">
-        <h3 class="  mt-5">Live Streaming</h3>
-        <div id="camera"></div>
-        <br>
-        <div class="row justify-content-md-center " style="text-align:center;">
-            <button class="col col col-lg-2" onclick="take_snapshot()" >Capture</button>
-            <button class="col col col-lg-2" onclick="retake()" >Retake</button>
-            <button class="col col col-lg-2" onclick="#" >Upload</button>
-        </div>
-        <br>
-        <h3 class="row justify-content-md-center" class="mt-5">Mood: Person is Happy</h3>
-        <br>
-        <div class="row justify-content-md-center">
-            <audio controls><source src = "/html/Kalimba.mp3" type = "audio/mpeg"></audio>
-        </div>
+    <div class="container">
+        <div class=" row">
+            <div class="col-lg-8 col-md-8">
+                <h3 class="  mt-5">Live Streaming</h3>
+                <div id="camera"></div>
+                <br>
+                <div class="row justify-content-md-center ">
+                    <button class="col col col-lg-2" onclick="take_snapshot()" >Capture</button>
+                    <button class="col col col-lg-2" onclick="retake()" >Retake</button>
+                    <button class="col col col-lg-2" onclick="#" >Upload</button>
+                </div>
+                <br>
+                <h3 class="row justify-content-md-center" class="mt-5">Mood: Person is Happy</h3>
+              </div>
+              <div class="col-lg-4 col-md-4" >
+                  <h3 class="  mt-5">Spotify Player</h3>
+                  <iframe src="https://open.spotify.com/embed/playlist/4SDCW3gQcNlD37XsM5ca6D" id="spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+          </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <script type="text/javascript" src= "{{ url_for('static',filename='javascript/home.js') }}">></script>
-
 {% endblock content %}
 
 
