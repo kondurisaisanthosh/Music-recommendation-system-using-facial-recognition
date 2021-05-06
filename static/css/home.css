@@ -1,0 +1,17 @@
+body{
+    background-color:black;
+}
+h3{
+    color:white;
+}
+#buttons{
+    width:50%;
+    display:flex;
+    justify-content:space-around;
+}
+.btn-success{
+    background-color:#173F5F;
+    color:white;
+    border:none;
+    padding:9px;
+}

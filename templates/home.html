@@ -4,25 +4,30 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/home.css') }}">
 
     <div class="container">
-        <div class=" row">
-            <div class="col-lg-8 col-md-8">
+        <div class=" row d-flex justify-content-around">
+            <div class="col-7">
                 <h3 class="  mt-5">Live Streaming</h3>
                 <div id="camera"></div>
                 <br>
-                <div class="row justify-content-md-center ">
-                    <button class="col col col-lg-2" onclick="take_snapshot()" >Capture</button>
-                    <button class="col col col-lg-2" onclick="retake()" >Retake</button>
-                    <button class="col col col-lg-2" onclick="#" >Upload</button>
-                </div>
-                <br>
-                <h3 class="row justify-content-md-center" class="mt-5">Mood: Person is Happy</h3>
-              </div>
-              <div class="col-lg-4 col-md-4" >
+            </div>
+            <div class="col-3" >
                   <h3 class="  mt-5">Spotify Player</h3>
-                  <iframe src="https://open.spotify.com/embed/playlist/4SDCW3gQcNlD37XsM5ca6D" id="spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-              </div>
-          </div>
+                  <iframe src="https://open.spotify.com/embed/playlist/4SDCW3gQcNlD37XsM5ca6D" id="spotify" width="400" height="423" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-4 " >
+            <div id="buttons">
+                <button class="col-lg-2 btn btn-success" onclick="take_snapshot()" >Capture</button>
+                <button class="col-lg-2 btn btn-success" onclick="retake()" >Retake</button>
+                <button class="col-lg-2 btn btn-success" onclick="#" >Upload</button>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="row justify-content-md-center mt-5" id="Mood" >Mood: Person is Happy</h3>
+        </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <script type="text/javascript" src= "{{ url_for('static',filename='javascript/home.js') }}">></script>
