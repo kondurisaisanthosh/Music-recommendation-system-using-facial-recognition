@@ -48,9 +48,7 @@ document.getElementById('myFileInput').addEventListener("change",function(){
     const reader=new FileReader();
     reader.addEventListener("load",()=>{
         data_uri=reader.result;
-        picture=document.getElementById('camera').innerHTML = '<img width="750" height="423" src="'+data_uri+'"/>';
-
-
+        document.getElementById('camera').innerHTML = '<img width="750" height="423" src="'+data_uri+'"/>';
         var base64data=data_uri.split(",")[1];
         var newbase64img=base64data.replace(/\//g,"SLASH");
         getEmotion(newbase64img).then(data=>{
