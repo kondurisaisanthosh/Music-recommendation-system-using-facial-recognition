@@ -43,3 +43,21 @@ async function getEmotion(newbase64img){
 function retake(){
     window.location.reload();
 }
+document.getElementById('myFileInput').addEventListener("change",function(){
+    console.log("upload Initiated");
+    const reader=new FileReader();
+    reader.addEventListener("load",()=>{
+        data_uri=reader.result;
+        picture=document.getElementById('camera').innerHTML = '<img width="750" height="423" src="'+data_uri+'"/>';
+
+
+        var base64data=data_uri.split(",")[1];
+        var newbase64img=base64data.replace(/\//g,"SLASH");
+        getEmotion(newbase64img).then(data=>{
+            playlist=playlists.get(data);
+            document.getElementById("spotify").src=playlist;
+            document.getElementById("Mood").innerHTML="Person is "+data;
+        });
+    });
+    reader.readAsDataURL(this.files[0]);
+ });

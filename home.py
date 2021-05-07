@@ -1,8 +1,13 @@
-from flask import Flask, render_template
+import os
+
+from flask import Flask, render_template, redirect
 
 from cam import capturePredict
 
 app = Flask(__name__)
+
+app.config['UPLOAD_FOLDER'] = '/static/images'
+
 
 @app.route('/')
 def index():
@@ -14,6 +19,7 @@ def capture(data):
     preditemotion = capturePredict(finalValue)
     print("My emo ", preditemotion)
     return preditemotion
+
 
 
 if __name__ == "__main__" :
