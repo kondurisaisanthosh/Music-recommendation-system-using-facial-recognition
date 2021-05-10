@@ -4,8 +4,7 @@
     <list default="true" id="405c1a75-235e-47b2-91e8-fe88829dce25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/color_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/color_img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/javascript/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/javascript/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,10 +185,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.home" />
+        <item itemvalue="Python.videoTester" />
         <item itemvalue="Python.cameraTester" />
         <item itemvalue="Python.spotifyMusic" />
         <item itemvalue="Python.cam" />
-        <item itemvalue="Python.videoTester" />
       </list>
     </recent_temporary>
   </component>
