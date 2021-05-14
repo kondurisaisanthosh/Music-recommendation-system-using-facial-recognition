@@ -1,6 +1,7 @@
+# importing dependencies
+
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
 import cv2
 from keras.models import model_from_json
 from keras.preprocessing import image
@@ -10,12 +11,15 @@ model.load_weights('fer.h5')
 face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 import numpy as np
 
+# convertiing the byte 64 data to image
 def data_uri_to_cv2_img(uri):
     encoded_data = uri.split(',')[1]
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     return img
 
+# preprocess the image
+# identifies the emotion of that particular image with the help of fer.h5
 def capturePredict(data):
     data='data:image/jpeg;base64,'+data
     img = data_uri_to_cv2_img(data)
@@ -44,5 +48,5 @@ def capturePredict(data):
         print(predicted_emotion)
         preditemotion=predicted_emotion
         cv2.putText(img, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-
+    # returns predicted emotion
     return preditemotion

@@ -1,9 +1,12 @@
+//Adjusting Web cam Dimensions on the home screen
+
 Webcam.set({
     width:750,
     height:423,
     image_format:'jpeg',
     jpeg_quality:90
 })
+//Getting playlists from Spotify
 let playlists = new Map();
 playlists.set("happy","https://open.spotify.com/embed/playlist/5MPIVMVxSdXXXiwBQM6a45");
 playlists.set("sad","https://open.spotify.com/embed/playlist/3NErR0TbvorTmM65GptZlP");
@@ -15,6 +18,9 @@ playlists.set("angry","https://open.spotify.com/embed/playlist/4SDCW3gQcNlD37XsM
 playlists.set("NO VALUE","https://open.spotify.com/embed/playlist/5MPIVMVxSdXXXiwBQM6a45");
 let playlist;
 
+//when Capture button is pressed
+//captures the image, converts into byte 64 format and sends to server for its response
+//receives server response and changes the play list according to it
 Webcam.attach("#camera");
 function take_snapshot(){
     Webcam.snap(function(data_uri){
@@ -30,6 +36,7 @@ function take_snapshot(){
         });
 }
 
+//Making API call to server, Initiated when capture/ upload button is pressed
 async function getEmotion(newbase64img){
     try{
         const result=await fetch('/imagecapture/'+newbase64img);
@@ -39,10 +46,15 @@ async function getEmotion(newbase64img){
         console.log(error)
     }
 }
-
+//when user want to retake his image again
 function retake(){
     window.location.reload();
 }
+
+
+//when upload button is pressed
+//converts the uploaded image into byte 64 format and sends to server for its response
+//receives server response and changes the play list according to it
 document.getElementById('myFileInput').addEventListener("change",function(){
     console.log("upload Initiated");
     const reader=new FileReader();

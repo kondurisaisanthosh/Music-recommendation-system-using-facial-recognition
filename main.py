@@ -1,3 +1,7 @@
+# importing dependencies
+#read kaggle facial expression recognition challenge dataset (fer2013.csv)
+#https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge
+
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import numpy as np
@@ -11,6 +15,7 @@ from keras.optimizers import   RMSprop
 from keras.regularizers import l2
 from keras.utils import np_utils
 
+# Loading dataset
 df=pd.read_csv('data/fer2013/fer2013.csv')
 print(df.info())
 # print(df["Usage"].value_counts())
